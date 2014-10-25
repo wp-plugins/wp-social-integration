@@ -349,16 +349,14 @@ function wp_social_integration_like_button_function($atts) {
             'share' => 'true'
 	), $atts);
 
-	$wp_scintg_login_options = get_option('wp_scintg_plugin_login_settings');
-	$wp_scintg_fbapp_id = $wp_scintg_login_options['wp_scintg_fbapp_id'];
-	$wp_scintg_sdk_fbml = $wp_scintg_login_options['wp_scintg_sdk_fbml']; $wp_scintg_sdk_fbml = $wp_scintg_sdk_fbml=="enabled" ? true : false;
-
-	//inject js sdk init script with app id
-	wp_register_script('wp_scintg_fb_script', plugins_url('js/wp_scintg_fb_init.js', __FILE__), array("jquery"), '1.0', false);
-	wp_enqueue_script('wp_scintg_fb_script');
-	wp_localize_script( 'wp_scintg_fb_script', 'wp_scintg_fb_script_vars', array('wp_scintg_fbappid'=>''.$wp_scintg_fbapp_id.'','wp_scintg_fbml'=>$wp_scintg_sdk_fbml));
-
-	//$wp_scintg_PageURL = 'http://'; if ($_SERVER["HTTPS"] == "on") {$wp_scintg_PageURL .= "https://";} $wp_scintg_PageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+	if(!defined('facebook_wall_and_social_integration_13478987')){ echo '<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, "script", "facebook-jssdk")); </script>'; define('facebook_wall_and_social_integration_13478987', true); }
 
 	$new_content = '<fb:like href="'.$atts['href'].'" width="'.$atts['width'].'" share="'.$atts['share'].'" layout="'.$atts['layout'].'"></fb:like>';
 
@@ -374,16 +372,14 @@ function wp_social_integration_follow_button_function($atts) {
             'colorscheme' => 'light',
 	), $atts);
 
-	$wp_scintg_login_options = get_option('wp_scintg_plugin_login_settings');
-	$wp_scintg_fbapp_id = $wp_scintg_login_options['wp_scintg_fbapp_id'];
-	$wp_scintg_sdk_fbml = $wp_scintg_login_options['wp_scintg_sdk_fbml']; $wp_scintg_sdk_fbml = $wp_scintg_sdk_fbml=="enabled" ? true : false;
-
-	//inject js sdk init script with app id
-	wp_register_script('wp_scintg_fb_script', plugins_url('js/wp_scintg_fb_init.js', __FILE__), array("jquery"), '1.0', false);
-	wp_enqueue_script('wp_scintg_fb_script');
-	wp_localize_script( 'wp_scintg_fb_script', 'wp_scintg_fb_script_vars', array('wp_scintg_fbappid'=>''.$wp_scintg_fbapp_id.'','wp_scintg_fbml'=>$wp_scintg_sdk_fbml));
-
-	//$wp_scintg_PageURL = 'http://'; if ($_SERVER["HTTPS"] == "on") {$wp_scintg_PageURL .= "https://";} $wp_scintg_PageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+		if(!defined('facebook_wall_and_social_integration_13478987')){ echo '<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, "script", "facebook-jssdk")); </script>'; define('facebook_wall_and_social_integration_13478987', true); }
 
 	$new_content = '<fb:follow href="'.$atts['href'].'" width="'.$atts['width'].'" layout="'.$atts['layout'].'" colorscheme="'.$atts['colorscheme'].'"></fb:follow>';
 
@@ -397,16 +393,14 @@ function wp_social_integration_send_button_function($atts) {
 			'colorscheme' => 'light',
 	), $atts);
 
-	$wp_scintg_login_options = get_option('wp_scintg_plugin_login_settings');
-	$wp_scintg_fbapp_id = $wp_scintg_login_options['wp_scintg_fbapp_id'];
-	$wp_scintg_sdk_fbml = $wp_scintg_login_options['wp_scintg_sdk_fbml']; $wp_scintg_sdk_fbml = $wp_scintg_sdk_fbml=="enabled" ? true : false;
-
-	//inject js sdk init script with app id
-	wp_register_script('wp_scintg_fb_script', plugins_url('js/wp_scintg_fb_init.js', __FILE__), array("jquery"), '1.0', false);
-	wp_enqueue_script('wp_scintg_fb_script');
-	wp_localize_script( 'wp_scintg_fb_script', 'wp_scintg_fb_script_vars', array('wp_scintg_fbappid'=>''.$wp_scintg_fbapp_id.'','wp_scintg_fbml'=>$wp_scintg_sdk_fbml)); 
-
-	//$wp_scintg_PageURL = 'http://'; if ($_SERVER["HTTPS"] == "on") {$wp_scintg_PageURL .= "https://";} $wp_scintg_PageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+		if(!defined('facebook_wall_and_social_integration_13478987')){ echo '<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, "script", "facebook-jssdk")); </script>'; define('facebook_wall_and_social_integration_13478987', true); }
 
 	$new_content = '<fb:send href="'.$atts['href'].'" width="'.$atts['width'].'" colorscheme="'.$atts['colorscheme'].'"></fb:send>';
 
