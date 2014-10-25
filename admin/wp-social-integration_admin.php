@@ -690,7 +690,7 @@ To display Facebook home page news feed copy and paste this short code anywhere 
 2. <strong>Open graph & twitter cards metadata - add Open graph protocol & twitter cards metadata, metadata input section for each post/page in edit panel, facebook and twitter profile/username inputs for each user for meta tags, site wide meta tags, set default image for different meta tags...read doc for more</strong><br/><br/>
 3. <strong>Facebook home page news feed - show images/links/youtube videos, show first comments, show all kinds of posts, display header bar, links and hashtags are linkable in text and other settings.</strong><br/><br/>
 4. <strong>Social plugins - more social plugins like FB share button, comments, any FB post embed...</strong><br/><br/>
-<strong>View pro version demo for all the features here - <a class="btn btn-info" target="_blank" href="http://wordpress.techhelpsource.com/wp_social_integration/">Pro Demo</a></strong>
+<strong>View pro version demo for all the features here - <a class="btn btn-info" target="_blank" href="http://wordpress.techhelpsource.com/wp-social-integration/">Pro Demo</a></strong>
 
 </div>
 </div>
