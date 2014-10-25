@@ -1,8 +1,5 @@
 <?php 
 
-/** Define the custom box in post editing panel*/
-add_action( 'add_meta_boxes', 'wp_scintg_add_metadata_box' );
-/**/
 function wp_social_integration_css_all_page() {
 	wp_enqueue_script('jquery');
 	wp_register_style($handle = 'wp_social_integration_bootstrap', $src = plugins_url('css/bootstrap.css', __FILE__), $deps = array(), $ver = '1.0.0', $media = 'all');
