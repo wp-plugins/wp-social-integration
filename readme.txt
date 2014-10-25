@@ -101,8 +101,8 @@ You can embed FB login button, Facebook news feed and others directly into a tem
 1. This pic shows meta tag settings
 2. FB home page news feed settings
 3. Login by FB settings
-4. meta tag input section per post/page edit panel
-5. author meta data inputs per user 
+4. author meta data inputs per user 
+5. meta tag input section per post/page edit panel
 
 == Changelog ==
 
