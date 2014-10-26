@@ -393,6 +393,10 @@ function wp_social_integration_send_button_function($atts) {
 			'colorscheme' => 'light',
 	), $atts);
 
+    $wp_scintg_PageURL = 'http://'; if ($_SERVER["HTTPS"] == "on") { $wp_scintg_PageURL .= "https://"; } $wp_scintg_PageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];    
+    $href_val = trim($atts['href']); 
+    if($href_val==""){ $href = 'href="'. $wp_scintg_PageURL .'"'; } else { $href='href="'. $href_val .'"'; }
+
 		if(!defined('facebook_wall_and_social_integration_13478987')){ echo '<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -402,7 +406,7 @@ function wp_social_integration_send_button_function($atts) {
 	fjs.parentNode.insertBefore(js, fjs);
 	}(document, "script", "facebook-jssdk")); </script>'; define('facebook_wall_and_social_integration_13478987', true); }
 
-	$new_content = '<fb:send href="'.$atts['href'].'" width="'.$atts['width'].'" colorscheme="'.$atts['colorscheme'].'"></fb:send>';
+	$new_content = '<fb:send '.$href.' width="'.$atts['width'].'" colorscheme="'.$atts['colorscheme'].'"></fb:send>';
 
 	return $new_content;
 }
