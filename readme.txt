@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 WP social integration brings login by facebook, adds basic & opengraph metadata, facebook news feed, facebook social plugins anywhere in page 
 
 == Description ==
+Following are the details of all features of this all in one social plugin, **[click here](http://wordpress.techhelpsource.com/wp-social-integration/)** to see pro version demo 
 
 = Login by facebook(pro) : =
 
