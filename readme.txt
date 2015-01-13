@@ -2,7 +2,7 @@
 Contributors: mitsol
 Tags: facebook login, wordpress, meta tags, plugins, open graph, twitter cards, metadata, social HTML, CSS, PHP, social login, wordpress social, facebook, facebook plugins, facebook newsfeed, facebook home 
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.1 
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
